@@ -1,0 +1,95 @@
+{
+  "name": "my-react-app",
+  "version": "0.1.0",
+  "proxy": "http://127.0.0.1:5000",
+  "private": true,
+  "dependencies": {
+    "@dnd-kit/core": "^6.0.8",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/joy": "^5.0.0-beta.36",
+    "@mui/material": "^5.15.15",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@zenfs/core": "^0.9.7",
+    "axios": "^1.6.8",
+    "bootstrap-icons": "^1.11.1",
+    "browserify-fs": "^1.0.0",
+    "convert-csv-to-json": "^2.46.0",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "express": "^4.19.2",
+    "file-saver": "^2.0.5",
+    "flatted": "^3.3.1",
+    "fs": "^0.0.1-security",
+    "fsevents": "2.2.1",
+    "level-filesystem": "^1.2.0",
+    "level-js": "^6.1.0",
+    "mui-file-input": "^4.0.4",
+    "node-pre-gyp": "0.17.0",
+    "node-sass": "^9.0.0",
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-awesome-button": "^7.0.5",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-drag-resize": "^0.1.4",
+    "react-draggable": "^4.4.6",
+    "react-hot-toast": "^2.4.1",
+    "react-hover": "^3.0.1",
+    "react-loaders-kit": "^0.1.3",
+    "react-notifications-component": "^4.0.1",
+    "react-rnd": "^10.4.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.4",
+    "react-tooltip": "^5.21.6",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "react-start": "BROWSER=none yarn start",
+    "electron-start": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "electron-pack": "yarn build && electron-builder build -c.extraMetadata.main=build/Main.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "main": "public/Main.js",
+  "homepage": "./"
+}

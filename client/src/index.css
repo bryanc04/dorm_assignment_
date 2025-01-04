@@ -1,0 +1,71 @@
+:root {
+  --kravis: #ff6951;
+  --harman: #ee9b49;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dorm-container {
+  border: 3px solid black;
+  width: 400px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.student-box {
+  width: fit-content;
+margin-left: 10px;
+margin-right: 10px;
+  background: var(--kravis);
+  flex: auto;
+  flex-grow:0;
+}
+
+.selection-section {
+  display: inline-grid;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  z-index: 1; 
+}
+
+
+
+
+button {
+
+
+  cursor: pointer;
+}
+
+.dorm-options {
+  margin: 10px;
+}
+
+.dorm {
+  cursor: grab;
+}
+.dorm:active {
+  cursor: grabbing;
+}
+.dorm-name-handle {
+  cursor: move; /* to show that it's draggable */
+}
+
